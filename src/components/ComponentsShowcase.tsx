@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import * as React from 'react';
+import React from 'react';
 
 import { Button } from '@/components/buttons';
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout';
 import {
   ArrowLink,
   ButtonLink,
@@ -14,7 +14,7 @@ import { SkeletonLoader } from '@/components/loaders';
 import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
 
-export default function ComponentsPage() {
+const ComponentsShowcase = () => {
   return (
     <Layout>
       <Seo
@@ -196,4 +196,6 @@ export default function ComponentsPage() {
       </main>
     </Layout>
   );
-}
+};
+
+export default ComponentsShowcase;
